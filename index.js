@@ -5,7 +5,7 @@ const cors = require("cors");
 app.use(cors());
 app.use(express.json());
 
-app.get("/", (res) => {
+app.get("/", (req, res) => {
     res.json({ message: "Teste" })
 });
 
