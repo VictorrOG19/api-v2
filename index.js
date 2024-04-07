@@ -7,9 +7,9 @@ app.use(express.json());
 
 app.get("/enviar-info", (req, res) => {
     if (req.body.username === "victor" && req.body.senha === "123") {
-        res.json({ ok: true })
+        res.json({ ok: true });
     } else {
-        res.json({ ok: false })
+        res.json({ ok: false });
     }
 });
 
